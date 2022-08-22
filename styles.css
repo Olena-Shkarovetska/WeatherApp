@@ -1,0 +1,104 @@
+body {
+  background: #a21232;
+  width: 100%;
+  margin: 60px auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+h1 {
+  color: #880e29;
+}
+
+p {
+  color: #4f535c;
+}
+
+img {
+  width: 45px;
+}
+.card {
+  margin: 50px 300px;
+  background: #ffdbc5;
+  border-radius: 20px;
+  border: #a21232;
+}
+
+.search-line {
+  margin: 0;
+  padding: 25px 50px;
+}
+
+.search-button {
+  margin: 25px auto;
+  font-size: 14px;
+  background: #a21232;
+  border: none;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: opacity 150ms ease;
+}
+
+.search-button:hover {
+  background: #880e29;
+}
+
+.current-button {
+  margin: 25px auto;
+  font-size: 14px;
+  border: none;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.top-temperature {
+  color: #880e29;
+  font-size: 42px;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 0;
+}
+
+.weather-icon {
+  vertical-align: baseline;
+  display: inline-block;
+  margin: 1px 10px 0 35px;
+}
+
+.units {
+  position: relative;
+  top: -18px;
+}
+
+.fahrenheit {
+  text-decoration: none;
+}
+
+.celsius {
+  color: #880e29;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.list {
+  text-align: center;
+}
+
+.day {
+  font-weight: bold;
+  font-size: large;
+  color: #880e29;
+}
+
+.temperature {
+  margin-top: 10px;
+  font-size: large;
+}
+
+.code-by {
+  color: beige;
+}

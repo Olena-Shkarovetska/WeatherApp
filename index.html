@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather_Project</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/60e5257798.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <br />
+        <form id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <div class="mb-3 search-line">
+                <input
+                  type="text"
+                  class="form-control shadow-sm"
+                  id="search-text-input"
+                  aria-describedby="search"
+                  placeholder="Enter your city"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <div class="col-3">
+              <button type="submit" class="btn btn-primary search-button">
+                🔎 Search
+              </button>
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success current-button"
+                id="current-location-button"
+              >
+                Current location
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div class="row">
+          <div class="col">
+            <h1 id="city"></h1>
+            <p id="date">Friday 23.00</p>
+            <br />
+          </div>
+
+          <div class="col">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/041/108/original/clouds.png?1658357141"
+              alt="cloud icons"
+              class="weather-icon"
+            />
+            <span class="top-temperature" id="temperature"></span>
+            <span class="units">
+              <a href="#" id="celsius-link" class="celsius">°C</a> |
+              <a href="#" class="fahrenheit" id="fahrenheit-link"> °F</a>
+            </span>
+            <p id="description"></p>
+          </div>
+
+          <div class="col">
+            <p>
+              Precipitation: 2%
+              <br />
+              Humidity: <span id="humidity"></span>%
+              <br />
+              Wind: <span id="wind"></span> km/h
+            </p>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row row-cols-5 list">
+          <div class="col">
+            <span class="day"> Sat </span>
+            <br />
+            16.07
+            <br />
+            <div class="temperature">
+              <p>
+                ⛅
+                <br />
+                <strong>24°</strong> / 13°
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <span class="day"> Sun </span>
+            <br />
+            17.07
+            <br />
+            <div class="temperature">
+              <p>
+                🌧
+                <br />
+                <strong>19°</strong> / 12°
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <span class="day"> Mon </span>
+            <br />
+            18.07
+            <br />
+            <div class="temperature">
+              <p>
+                ⛅
+                <br />
+                <strong>22°</strong> / 12°
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <span class="day"> Tue </span>
+            <br />
+            19.07
+            <br />
+            <div class="temperature">
+              <p>
+                ⛅
+                <br />
+                <strong>23°</strong> / 14°
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <span class="day"> Wed </span>
+            <br />
+            20.07
+            <br />
+            <div class="temperature">
+              <p>
+                ⛅
+                <br />
+                <strong>25°</strong> / 15°
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="code-by">Open-source code by Olena Shkarovetska</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
