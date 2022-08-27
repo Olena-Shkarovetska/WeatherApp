@@ -22,10 +22,11 @@ img {
   width: 45px;
 }
 .card {
-  margin: 50px 300px;
+  margin: 0 auto;
   background: #ffdbc5;
   border-radius: 20px;
   border: #a21232;
+  max-width: 600px;
 }
 
 .search-line {
