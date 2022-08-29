@@ -59,15 +59,16 @@ img {
 .top-temperature {
   color: #880e29;
   font-size: 42px;
-  line-height: 1;
+  line-height: 1.2;
   text-align: center;
   margin-top: 0;
+      margin-bottom: 0.5rem;
 }
 
 .weather-icon {
   vertical-align: baseline;
   display: inline-block;
-  margin: 0px 10px 0 35px;
+  margin: 0 auto;
 }
 
 .description {
@@ -78,16 +79,19 @@ img {
 .units {
   position: relative;
   top: -18px;
+  padding: 0;
 }
 
 .fahrenheit {
   text-decoration: none;
+  padding: 0;
 }
 
 .celsius {
   color: #880e29;
   font-weight: bold;
   text-decoration: none;
+  padding: 0;
 }
 
 .list {
