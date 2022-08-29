@@ -26,7 +26,7 @@ img {
   background: #ffdbc5;
   border-radius: 20px;
   border: #a21232;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .search-line {
@@ -59,7 +59,7 @@ img {
 .top-temperature {
   color: #880e29;
   font-size: 42px;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
   margin-top: 0;
 }
@@ -67,7 +67,12 @@ img {
 .weather-icon {
   vertical-align: baseline;
   display: inline-block;
-  margin: 1px 10px 0 35px;
+  margin: 0px 10px 0 35px;
+}
+
+.description {
+  display: block;
+  margin: 0 auto;
 }
 
 .units {
