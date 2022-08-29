@@ -57,12 +57,12 @@ img {
 }
 
 .top-temperature {
+  display: inline-block;
   color: #880e29;
   font-size: 42px;
   line-height: 1.2;
-  text-align: center;
   margin-top: 0;
-      margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .weather-icon {
@@ -76,9 +76,14 @@ img {
   margin: 0 auto;
 }
 
+  .description:first-letter {
+  text-transform: capitalize;
+}
+
 .units {
   position: relative;
   top: -18px;
+  font-size: 16px;
   padding: 0;
 }
 
