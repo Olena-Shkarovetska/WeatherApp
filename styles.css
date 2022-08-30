@@ -56,24 +56,29 @@ img {
   cursor: pointer;
 }
 
+.main-temperature {
+  text-align: center;
+}
+
 .top-temperature {
   display: inline-block;
+  margin: 0 auto;
   color: #880e29;
   font-size: 42px;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 0.5rem;
 }
 
-.weather-icon {
-  vertical-align: baseline;
+.float-left {
   display: inline-block;
   margin: 0 auto;
+  margin-top: -20px;
 }
 
 .description {
   display: block;
   margin: 0 auto;
+  margin-top: 6px;
 }
 
 .description:first-letter {
@@ -85,6 +90,8 @@ img {
   top: -18px;
   font-size: 14px;
   padding: 0;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .fahrenheit {
