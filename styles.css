@@ -76,14 +76,14 @@ img {
   margin: 0 auto;
 }
 
-  .description:first-letter {
+.description:first-letter {
   text-transform: capitalize;
 }
 
 .units {
   position: relative;
   top: -18px;
-  font-size: 16px;
+  font-size: 14px;
   padding: 0;
 }
 
@@ -93,10 +93,18 @@ img {
 }
 
 .celsius {
-  color: #880e29;
-  font-weight: bold;
   text-decoration: none;
   padding: 0;
+}
+
+.weather-temperature .active {
+  color: #880e29;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
 
 .list {
