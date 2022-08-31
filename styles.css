@@ -114,8 +114,9 @@ img {
   text-decoration: none;
 }
 
-.list {
+.weather-forecast {
   text-align: center;
+  
 }
 
 .weather-forecast-date {
