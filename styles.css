@@ -118,17 +118,21 @@ img {
   text-align: center;
 }
 
-.day {
+.weather-forecast-date {
   font-weight: bold;
   font-size: large;
   color: #880e29;
 }
 
-.temperature {
-  margin-top: 10px;
-  font-size: large;
+.weather-forecast-temperatures {
+   color: #4f535c;
 }
 
-.code-by {
+.weather-forecast-temperature-max {
+  font-weight: bold;
+  }
+
+ .code-by {
   color: beige;
+  
 }
