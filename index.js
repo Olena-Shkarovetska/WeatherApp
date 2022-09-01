@@ -30,6 +30,36 @@ currentDate.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
+//Forecast
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+
+  let forecastHTML = `<div class="row">`;  
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="col-2">
+      <div class="weather-forecast-date">${day}</div>
+      <img
+        src="http://openweathermap.org/img/wn/50d@2x.png"
+        alt=""
+        width="30"
+      />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temperature-max">24°</span> /
+        <span class="weather-forecast-temperature-min">13°</span>
+      </div>
+  </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 //API Geolocation
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -45,7 +75,10 @@ function displayWeatherCondition(response) {
     response.data.weather[0].description;
 
   let iconElement = document.querySelector("#icon");
-  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   celsiusTemperature = response.data.main.temp;
@@ -77,7 +110,6 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("New York");
 //
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
@@ -105,3 +137,5 @@ function convertToCelsius(event) {
   fahrenheitLink.classList.remove("active");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+searchCity("New York");
+displayForecast();
