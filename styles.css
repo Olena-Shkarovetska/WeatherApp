@@ -26,7 +26,7 @@ img {
   background: #ffdbc5;
   border-radius: 20px;
   border: #a21232;
-  max-width: 700px;
+  max-width: 750px;
 }
 
 .search-line {
@@ -114,6 +114,10 @@ img {
   text-decoration: none;
 }
 
+.humidity-wind {
+  margin-top: 18px;
+}
+
 .weather-forecast {
   text-align: center;
   
@@ -123,10 +127,12 @@ img {
   font-weight: bold;
   font-size: large;
   color: #880e29;
+  
 }
 
 .weather-forecast-temperatures {
    color: #4f535c;
+   margin-bottom: 42px;
 }
 
 .weather-forecast-temperature-max {
